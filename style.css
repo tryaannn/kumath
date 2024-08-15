@@ -1,0 +1,188 @@
+:root {
+  --blue: #a3d4ff;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.804) !important;
+  color: #000;
+  backdrop-filter: blur(4px);
+  margin-top: -4.7rem;
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+  width: 60vh;
+  border-radius: 1.5rem;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mynavbar .offcanvas-title {
+  font-size: 1.4rem;
+}
+
+.mynavbar .offcanvas-body .navbar-nav {
+  align-items: center;
+}
+
+.mynavbar a:hover {
+  background-color: var(--blue);
+  transition: 1s;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.sticky-top {
+  overflow: hidden;
+}
+
+.beranda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  /* height: 100%; */
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.beranda {
+  color: white;
+}
+
+.beranda .banner {
+  height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp4785145.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.materi,
+.latihan,
+.grafik,
+.tentang {
+  padding: 6rem 0 2rem;
+  background-color: #61b1f346;
+}
+
+.materi h2,
+.latihan h2,
+.grafik h2,
+.tentang h2 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.materi p,
+.latihan p {
+  margin: 0 1.5rem 0;
+}
+
+.latihan #quiz {
+  margin: 0 2rem 0;
+  line-height: 2.5rem;
+}
+
+.latihan button {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(68, 68, 255, 0.685);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.grafik #a,
+.grafik #b,
+.grafik #c {
+  display: inline;
+  margin: 1rem;
+}
+
+.tentang img {
+  width: 250px;
+  border: 5px solid;
+}
+
+footer {
+  padding: 2rem;
+  background-color: rgb(130, 172, 244);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+/* media query */
+/* xl*/
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .navbar-nav {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
